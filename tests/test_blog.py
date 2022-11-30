@@ -14,6 +14,7 @@ from mezzanine.core.models import CONTENT_STATUS_PUBLISHED
 from mezzanine.pages.models import Page, RichTextPage
 from mezzanine.utils.tests import TestCase
 
+# *************main**Code**************
 
 class BlogTests(TestCase):
     def test_blog_views(self):
@@ -74,6 +75,8 @@ class BlogTemplatetagsTests(TestCase):
         make_blog_post(2017, 4, 20)
         make_blog_post(2014, 5, 15)
 
+#    ********HTML** tamplate**********
+        
         html = Template(
             """\n
             {% load blog_tags %}
